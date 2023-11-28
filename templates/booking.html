@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKING</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        strong {
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Booking Details</h1>
+    <ul>
+        {% for i in data %}
+            <li>
+                <strong>Tracking Number:</strong> {{ i.tracking_number }}<br>
+                <strong>Sender Name:</strong> {{ i.sender_name }}<br>
+                <strong>Sender Number:</strong> {{ i.sender_number }}<br>
+                <strong>Receiver Name:</strong> {{ i.receiver_name }}<br>
+                <strong>Receiver Number:</strong> {{ i.receiver_number }}<br>
+                <strong>Status:</strong> {{ i.status }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

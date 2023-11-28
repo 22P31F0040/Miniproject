@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://images.pexels.com/photos/6170454/pexels-photo-6170454.jpeg?autocompress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+        }
+
+        header {
+            font-family: 'Cursive', sans-serif;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto 0;
+        }
+
+        footer div {
+            margin-bottom: 20px;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Courier Management System</h1>
+        <p>Efficient and Reliable Courier Services</p>
+        
+        <button onclick="location.href='bookhere'">BOOK HERE</button>
+        <button onclick="location.href='book'">BOOKING DETAILS</button>
+        <button onclick="location.href='trackhere'">TRACK HERE</button>
+        <button onclick="location.href='track'">TRACKING DETAILS</button>
+    </header>
+    
+    <footer class="footer">
+        <div>
+            <h3>Contact Us</h3>
+            <p>Email: OCMS@mail.com</p>
+            <p>Phone: +91 9876543210</p>
+            <p>Address: Aditya PG college, Kakinada</p>
+        </div>
+
+        <div>
+            <h3>About Us</h3>
+            <p>Your Courier Management System is dedicated to providing efficient and reliable courier services.</p>
+        </div>
+
+        <div>
+            <h3>Follow Us</h3>
+            <a href="facebook.com" target="_blank">Facebook</a> |
+            <a href="twitter.com" target="_blank">Twitter</a> |
+            <a href="linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>

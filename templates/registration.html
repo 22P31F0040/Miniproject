@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE COURIER MANAGEMENT SYSTEM
+        <h3>LOGIN FORM</h3>
+    </title>
+    <style>
+        body{
+            background-color: #f3f2fa;
+        }
+        .background{
+            width: 430px;
+            height: 450px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+        }
+        .background  .shape{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+        }
+        .shape:first-child{
+            background: linear-gradient(#1350de, #1c95e5);
+            left: -80px;
+            top: -90px;
+        }
+        .shape:last-child{
+            background: linear-gradient(to right, #e45133, #f4a22f);
+            right: -80px;
+            bottom: -130px;
+        }
+        form{
+            height: 110%; 
+            width: 450px;
+            background-color: rgba(245, 241, 241, 0.13);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            padding: 50px 35px;
+        }
+        form {
+            font-family: 'Poppins',sans-serif;
+            color: #1e0404;
+            letter-spacing: 0.5px;
+            outline: none;
+            border: none;
+        }
+        form h3{
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+            text-align: center;
+        }
+        label{
+            display: block;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 30px;
+        }
+        input{
+            display: block;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(11, 1, 1, 0.07);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        ::placeholder{
+            color: #060101;
+        }
+        button{
+            margin-top: 30px;
+            width: 100%;
+            background-color: #fff;
+            color: #121115;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .box{
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+   
+
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <form>
+      <h3>ONLINE COURIER MANAGEMENT SYSTEM</h3>
+      <h4 align="center">REGISTRATION</h4>
+
+      <label for="username">Username</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="text" placeholder="Enter your email" required>
+
+        <label for="pwd">Password</label>
+        <input type="password" placeholder="Create password" required>
+
+        <label for="cnfpwd">Confirm Password</label>
+        <input type="password" placeholder="Confirm password" required>
+      <div>
+        <input type="checkbox" class="box">
+        <h4>I accept all terms & condition</h4>
+      </div>
+      <div class="button">
+        <a href="index.html" target="_blank"></a>
+        <button onclick="location.href='login/'">Register Now</button>
+      </div>
+      <div class="text">
+        <h4>Already have an account? <a href="login">Login now</a></h4>
+      </div>
+    </form>
+    </body>
+</html>
