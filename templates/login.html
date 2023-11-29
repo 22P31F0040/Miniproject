@@ -138,13 +138,34 @@
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password" required>
         
-        <a href="index.html" target="_blank"></a>
-        <button onclick="location.href='home/'">Log In</button>
+        <button type ="button" onclick="login()">Log In</button>
         <div class="social-icon">
             <div class="go"><i class='bx bxl-google' ></i>Google</div>
             <div class="fb"><i class='bx bxl-facebook' ></i>Facebook</div>
         </div>
     </form>
+
+    <script>
+        function login() {
+            var usernameInput = document.getElementById("username");
+            var passwordInput = document.getElementById("password");
+            var username = usernameInput.value;
+            var password = passwordInput.value;
+
+            var validUsername = "Ajay";
+            var validPassword = "pass";
+
+            if (username === validUsername && password === validPassword) {
+                alert("Login Successful!!!");
+
+                window.location.href = 'home';
+            } else {
+                alert("Invalid username or password");
+                
+                passwordInput.value = "";
+            }
+        }
+    </script>
     
 </body>
 </html>

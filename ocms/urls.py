@@ -17,18 +17,17 @@ from django.contrib import admin
 from django.urls import path
 from cbooking.views import book,book_here
 from ctracking.views import track,track_here
-from home.views import Home,Login,Regis
+from home.views import Home,Login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('book',book),
     path('track',track),
-    path('login/home/book/',book),
-    path('login/home/track/',track),
+    path('home/book/',book),
+    path('home/track/',track),
     path('track/<str:tracking_number>/', track, name='track'),
-    path('login/home/',Home),
-    path('login/',Login),
-    path('',Regis),
-    path('login/home/bookhere',book_here),
-    path('login/home/trackhere',track_here)
+    path('home/',Home),
+    path('',Login),
+    path('home/bookhere',book_here),
+    path('home/trackhere',track_here)
 ]

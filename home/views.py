@@ -6,6 +6,3 @@ def Home(request):
 
 def Login(request):
     return render(request,'login.html')
-
-def Regis(request):
-    return render(request,'registration.html')
