@@ -27,6 +27,7 @@ urlpatterns = [
     path('home/track/',track),
     path('track/<str:tracking_number>/', track, name='track'),
     path('home/',Home),
+    path('home/index',Login),
     path('',Login),
     path('home/bookhere',book_here),
     path('home/trackhere',track_here)
