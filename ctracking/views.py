@@ -15,7 +15,7 @@ def track_here(request):
         form = Trackhere(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('track/')
     else:
         form = Trackhere()
 
